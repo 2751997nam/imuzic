@@ -18,6 +18,7 @@
 */
 
 const { Ignitor } = require('@adonisjs/ignitor')
+global.dir = __dirname;
 
 new Ignitor(require('@adonisjs/fold'))
   .appRoot(__dirname)

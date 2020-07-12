@@ -17,3 +17,8 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+
+Route.group(() => {
+    Route.get('song', 'SongController.index');
+    Route.post('song', 'SongController.create');
+  }).prefix('api')
